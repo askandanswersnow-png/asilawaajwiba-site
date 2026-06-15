@@ -7,46 +7,86 @@
 <title>أسئلة وأجوبة</title>
 
 <style>
-body {
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     font-family: Arial, sans-serif;
-    background: #f8f9fa;
-    text-align: center;
+    background: linear-gradient(135deg, #14B8A6, #2563EB);
+    color: white;
+    min-height: 100vh;
 }
 
 .container {
-    max-width: 800px;
+    max-width: 900px;
     margin: auto;
-    padding: 50px 20px;
+    padding: 60px 20px;
+    text-align: center;
 }
 
 .logo {
-    width: 120px;
-    margin-bottom: 20px;
+    width: 140px;
+    margin-bottom: 25px;
 }
 
 h1 {
-    font-size: 34px;
-    margin-bottom: 15px;
+    font-size: 42px;
+    margin-bottom: 20px;
 }
 
-p {
-    color: #666;
-    line-height: 1.9;
-    font-size: 18px;
+.subtitle {
+    font-size: 20px;
+    opacity: .95;
+    line-height: 2;
+    max-width: 700px;
+    margin: auto;
+}
+
+.features {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 20px;
+}
+
+.card {
+    background: rgba(255,255,255,.12);
+    padding: 25px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+}
+
+.card h3 {
+    margin-bottom: 12px;
 }
 
 .links {
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
-a {
-    display: block;
-    margin: 15px 0;
+.links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 14px 22px;
+    border-radius: 14px;
+    background: white;
+    color: #2563EB;
     text-decoration: none;
-    font-size: 18px;
-    color: #2563eb;
     font-weight: bold;
+    transition: .2s;
+}
+
+.links a:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    margin-top: 50px;
+    opacity: .8;
+    font-size: 14px;
 }
 </style>
 
@@ -59,15 +99,45 @@ a {
 ```
 <h1>أسئلة وأجوبة</h1>
 
-<p>
-    تطبيق مسابقات وأسئلة متنوعة في الإسلاميات والجغرافيا والتاريخ.
-    اختبر معلوماتك، اجمع النقاط، افتح الإنجازات، ونافس في لوحة الصدارة.
+<p class="subtitle">
+    تطبيق مسابقات وأسئلة ذكي يجمع بين الترفيه والتعلم.
+    اختبر معلوماتك في الإسلاميات والجغرافيا والتاريخ،
+    اجمع النقاط، حافظ على الستريك، افتح الإنجازات،
+    ونافس اللاعبين في لوحة الصدارة.
 </p>
+
+<div class="features">
+
+    <div class="card">
+        <h3>📚 آلاف الأسئلة</h3>
+        <p>قاعدة بيانات ضخمة ومتجددة باستمرار.</p>
+    </div>
+
+    <div class="card">
+        <h3>🏆 إنجازات وتحديات</h3>
+        <p>افتح الإنجازات وارفع مستواك.</p>
+    </div>
+
+    <div class="card">
+        <h3>🔥 ستريك يومي</h3>
+        <p>حافظ على سلسلة الإجابات الصحيحة.</p>
+    </div>
+
+    <div class="card">
+        <h3>🌍 تصنيفات متنوعة</h3>
+        <p>إسلاميات، جغرافيا، تاريخ وأكثر قريبًا.</p>
+    </div>
+
+</div>
 
 <div class="links">
     <a href="privacy.html">سياسة الخصوصية</a>
     <a href="terms.html">سياسة الاستخدام</a>
     <a href="refund.html">سياسة الاسترداد</a>
+</div>
+
+<div class="footer">
+    © 2026 أسئلة وأجوبة - جميع الحقوق محفوظة
 </div>
 ```
 
